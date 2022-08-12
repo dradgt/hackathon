@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="static/styles/bootstrap.min.css">
 	<link rel="stylesheet" href="static/styles/unicons.css">											  	   
     <link rel="stylesheet" href="static/styles/tooplate-style.css">
+    
   </head>
-  <body>		 
+  <body>	 
     <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
             <a class="navbar-brand" href="/"><img src="static/images/logo.png" style="width:40px;height:40px;margin-right:10px;">IIT MADRAS</a>
@@ -22,7 +23,7 @@
                         <a href="/" class="nav-link"><span data-hover="Home">Home</span></a>
                     </li>
                     <li class="nav-item">				 
-                        <a href="members" class="nav-link"><span data-hover="Members">Members</span></a>
+                        <a href="/members" class="nav-link" onclick="load_home()"><span data-hover="Members">Members</span></a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-lg-auto">
@@ -36,6 +37,7 @@
             </div>
         </div>
     </nav>
+    <div id="id"> </div>
 
     <!-- FOOTER -->
      <footer class="footer py-5">
@@ -58,6 +60,12 @@
     <script src="static/js/jQuery.headroom.js"></script>
     <script src="static/js/smoothscroll.js"></script>
     <script src="static/js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        function load_home() {
+            document.getElementById("id").innerHTML='<object type="text/html" data="team.html" ></object>';
+       }
+    </script>
 
   </body>
 </html>
