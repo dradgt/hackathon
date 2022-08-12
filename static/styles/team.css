@@ -6,7 +6,44 @@ html{
 .container{
     background: #000000;
 }
+
+/* .heading{
+    color:#fff;
+    margin-left: 5cm;
+    margin-bottom: 2cm;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;    
+} */
  
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 5px;
+    position: relative;
+}
+
+.section-title h1::before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 3px;
+    right: 32%;
+    margin: 0 0 5px;
+    margin-left:11px;
+    background-color: #ffc200;
+    bottom: -5px;
+}
+
 .our-team{
     padding: 20px 15px 30px;
     background: #fff;
@@ -23,7 +60,7 @@ html{
     transition: all 0.5s ease 0s;
 }
 .our-team:hover .pic{
-    background: #17bebb;
+    background:#ffc200;
     border-radius: 50%;
 }
 .pic img{
@@ -42,7 +79,7 @@ html{
 .our-team .post{
     display: block;
     font-size: 15px;
-    color: #17bebb;
+    color: #ffc200;
     text-transform: capitalize;
     margin-bottom: 15px;
 }
@@ -62,14 +99,24 @@ html{
     line-height: 30px;
     border-radius: 50%;
     font-size: 15px;
-    color: #17bebb;
-    border: 1px solid #17bebb;
+    color: #ffc200;
+    border: 1px solid #ffc200;
     transition: all 0.5s ease 0s;
 }
 .our-team:hover .social li a{
-    background: #17bebb;
+    background: #ffc200;
     color: #fff;
 }
+
+.dark-mode {
+    background: #0c0c0d;
+}
+
+.dark-mode .our-team:hover .social li a{
+    background: #ffc200;
+    color: #000000;
+}
+
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
 }
