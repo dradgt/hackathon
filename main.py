@@ -7,7 +7,7 @@ def home():
 
 @app.route('/members')
 def getMembers():
-   return render_template('members.html')
+   return render_template('team.html')
    
 if __name__ == '__main__':
    app.run()
