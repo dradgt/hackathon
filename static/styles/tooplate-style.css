@@ -26,6 +26,10 @@ body {
   letter-spacing: 0.2px;
 }
 
+.division{
+  background-color:#5b5b5b;
+}
+
 ul {
   margin: 0;
   padding: 0;
